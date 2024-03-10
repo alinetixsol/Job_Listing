@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* Inside your CSS file or component */
+/* WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3498db; /* Color of the thumb */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2980b9; /* Color of the thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ecf0f1; /* Color of the track */
+  border-radius: 8px;
+}
+
+/* Firefox */
+/* Note: Firefox currently doesn't support styling the scrollbar-thumb directly */
+* {
+  scrollbar-color: #3498db #ecf0f1; /* thumb color, track color */
+}
+
+/* Optionally, you can add a transition effect for a smoother appearance */
+/* Uncomment the following lines if you want to add a transition effect */
+/*
+::-webkit-scrollbar-thumb {
+  transition: background-color 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transition: background-color 0.3s ease-in-out;
+}
+*/
+
+/* Example of scrollbar width adjustment for Firefox */
+/* Adjust the width according to your preference */
+/*
+* {
+  scrollbar-width: thin;
+}
+*/
